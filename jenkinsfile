@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    environment {
+        name= "Devops"
+    }
+ stages {
+     stage('stage-1') {
+         steps {
+             echo "This is Stage one and Ran successfully"
+         }
+     }
+    stage('stage-2') {
+        steps {
+            echo "This is Stage two and Ran successfully"
+        }
+    }
+ }
+}
